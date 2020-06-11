@@ -1,2 +1,4 @@
 # minion
-Minimal CLI app with config and DI
+
+This project demonstrates a minimal `symfony/console` application utilizing `laminas/laminas-servicemanager` together
+with `laminas/laminas-config-aggregator`.
