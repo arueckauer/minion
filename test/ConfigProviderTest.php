@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace MinionTest;
 
+use Minion\Command\Kevin;
 use Minion\ConfigProvider;
 use PHPUnit\Framework\TestCase;
 
@@ -22,5 +23,6 @@ class ConfigProviderTest extends TestCase
         $this->assertIsArray($config['dependencies']);
         $this->assertArrayHasKey('factories', $config['dependencies']);
         $this->assertIsArray($config['dependencies']['factories']);
+        $this->assertArrayHasKey(Kevin::class, $config['dependencies']['factories']);
     }
 }
