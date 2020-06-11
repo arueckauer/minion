@@ -13,7 +13,9 @@
         }
     ],
     "require": {
-        "php": "^7.4 || ^8.0"
+        "php": "^7.4 || ^8.0",
+        "laminas/laminas-config-aggregator": "^1.2",
+        "laminas/laminas-servicemanager": "^3.4"
     },
     "require-dev": {
         "laminas/laminas-coding-standard": "^2.0",
