@@ -1,0 +1,23 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types = 1);
+
+namespace Elstr\Console;
+
+use Minion\Command\Kevin;
+use Psr\Container\ContainerInterface;
+use Symfony\Component\Console\Application;
+
+require 'vendor/autoload.php';
+
+call_user_func(static function () {
+    /** @var ContainerInterface $container */
+    $container = require __DIR__ . '/../config/container.php';
+
+    $application = new Application('Minion');
+    $application->addCommands([
+        $container->get(Kevin::class),
+    ]);
+    $application->run();
+});
