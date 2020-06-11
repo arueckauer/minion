@@ -1,0 +1,34 @@
+{
+    "name": "arueckauer/minion",
+    "type": "project",
+    "description": "Minimal CLI app with config and DI",
+    "homepage": "https://github.com/arueckauer/minion",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Andi Rückauer",
+            "email": "arueckauer@gmail.com",
+            "homepage": "https://arueckauer.github.io/",
+            "role": "Project lead"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0"
+    },
+    "require-dev": {},
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Minion\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MinionTest\\": "test/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
