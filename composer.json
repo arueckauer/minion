@@ -14,14 +14,14 @@
     ],
     "require": {
         "php": "^7.4 || ^8.0",
-        "laminas/laminas-config-aggregator": "^1.2",
-        "laminas/laminas-servicemanager": "^3.4",
-        "symfony/console": "^5.1"
+        "laminas/laminas-config-aggregator": "^1.5",
+        "laminas/laminas-servicemanager": "^3.7",
+        "symfony/console": "^5.3"
     },
     "require-dev": {
-        "laminas/laminas-coding-standard": "^2.0",
-        "phpunit/phpunit": "^9.2",
-        "roave/security-advisories": "dev-master"
+        "laminas/laminas-coding-standard": "^2.3",
+        "phpunit/phpunit": "^9.5",
+        "roave/security-advisories": "dev-latest"
     },
     "config": {
         "sort-packages": true
